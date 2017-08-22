@@ -7,6 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import in.androidmate.anujgupta.bottomnavigationbar.R;
+
 /**
  * Created by anujgupta on 22/08/17.
  */
@@ -16,6 +18,7 @@ public class ScheduleFrag extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return super.onCreateView(inflater, container, savedInstanceState);
+        View v = inflater.inflate(R.layout.frag_schedule,container,false);
+        return v;
     }
 }
