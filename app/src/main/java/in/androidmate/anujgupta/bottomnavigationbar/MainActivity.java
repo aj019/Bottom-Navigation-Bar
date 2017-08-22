@@ -63,8 +63,10 @@ public class MainActivity extends AppCompatActivity {
 
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.setCustomAnimations(R.anim.enter_from_left,R.anim.exit_from_right);
         fragmentTransaction.replace(R.id.frame,frag);
         fragmentTransaction.commit();
+        this.overridePendingTransition(R.anim.enter_from_left,R.anim.exit_from_right);
 
     }
 }
