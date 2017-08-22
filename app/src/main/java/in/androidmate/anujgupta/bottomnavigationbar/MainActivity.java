@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
                                 Toast.makeText(MainActivity.this,"Music",Toast.LENGTH_SHORT).show();
                                 break;
                         }
-                        return false;
+                        return true;
                     }
                 });
     }
